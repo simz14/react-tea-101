@@ -17,7 +17,19 @@ const TeaImage = styled.img`
   height: 160px;
   object-fit: cover;
 `;
-const Button = styled.button`
+
+const ToButtonsWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+`;
+
+const ButtonToHome = styled.button`
+  margin: 30px;
+  width: 200px;
+`;
+
+const ButtonToOpinion = styled.button`
   margin: 30px;
   width: 200px;
 `;
@@ -36,9 +48,14 @@ const Teas = () => {
         <TeaButtons currentTeaFn={currentTeaFn} />
         <TeaDesc currentTea={currentTea} />
       </DatatWrapper>
-      <NavLink to="/">
-        <Button>⬅ Back to Homepage</Button>
-      </NavLink>
+      <ToButtonsWrapper>
+        <NavLink to="/">
+          <ButtonToHome>⬅ Back to Homepage</ButtonToHome>
+        </NavLink>
+        <NavLink to="/opinion">
+          <ButtonToOpinion>Leave opinion➡</ButtonToOpinion>
+        </NavLink>
+      </ToButtonsWrapper>
     </div>
   );
 };
