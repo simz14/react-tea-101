@@ -22,10 +22,6 @@ const TeaViedo = styled.video`
   left: 0;
 `;
 
-const CheckBtn = styled.button`
-  width: 20%;
-`;
-
 const Home = () => {
   return (
     <HomeWrapper>
@@ -40,7 +36,7 @@ const Home = () => {
       <h1>Delicous</h1>
       <h1>Delights</h1>
       <NavLink to={"/teas"}>
-        <CheckBtn>Check 'em out</CheckBtn>
+        <button>Check 'em out</button>
       </NavLink>
     </HomeWrapper>
   );
