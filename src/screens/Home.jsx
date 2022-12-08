@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const HomeWrapper = styled.div`
   display: flex;
@@ -38,7 +39,9 @@ const Home = () => {
       </TeaViedo>
       <h1>Delicous</h1>
       <h1>Delights</h1>
-      <CheckBtn>Check 'em out</CheckBtn>
+      <NavLink to={"/teas"}>
+        <CheckBtn>Check 'em out</CheckBtn>
+      </NavLink>
     </HomeWrapper>
   );
 };
