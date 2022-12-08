@@ -1,17 +1,28 @@
 import React from "react";
+import styled from "styled-components";
 import getTeas from "../services/getTeas";
+
+const TeaButtonStyled = styled.div`
+  grid-column: 1/2;
+  display: grid;
+`;
+
+const Button = styled.button`
+  width: 200px;
+  margin: 5px;
+`;
 
 const TeaButtons = ({ currentTeaFn }) => {
   return (
-    <div>
+    <TeaButtonStyled>
       {getTeas.map((tea) => {
         return (
-          <button key={tea.id} onClick={() => currentTeaFn(tea.id)}>
+          <Button key={tea.id} onClick={() => currentTeaFn(tea.id)}>
             What is {tea.name}
-          </button>
+          </Button>
         );
       })}
-    </div>
+    </TeaButtonStyled>
   );
 };
 

@@ -1,7 +1,7 @@
 :root {
   display: flex;
   justify-content: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -20,14 +20,14 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  margin: 0;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
 button {
@@ -42,7 +42,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  background-color: #5d8e36;
+  background-color: #a18a6e;
+  transition: 0.3s ease;
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,6 +55,7 @@ button:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #dbd7b4;
+    transition: 0.3s ease;
   }
 }

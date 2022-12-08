@@ -2,6 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,23 +30,29 @@ const TeaViedo = styled.video`
   left: 0;
 `;
 
+const Button = styled.button`
+  margin-top: 15px;
+`;
+
 const Home = () => {
   return (
-    <HomeWrapper>
-      <TeaViedo className="videoTag" autoPlay loop muted>
-        <source
-          src={
-            "https://videos.pond5.com/beauty-shot-tea-plantation-footage-051072420_main_xxl.mp4"
-          }
-          type="video/mp4"
-        />
-      </TeaViedo>
-      <h1>Delicous</h1>
-      <h1>Delights</h1>
-      <NavLink to={"/teas"}>
-        <button>Check 'em out</button>
-      </NavLink>
-    </HomeWrapper>
+    <ContentWrapper>
+      <HomeWrapper>
+        <TeaViedo className="videoTag" autoPlay loop muted>
+          <source
+            src={
+              "https://videos.pond5.com/beauty-shot-tea-plantation-footage-051072420_main_xxl.mp4"
+            }
+            type="video/mp4"
+          />
+        </TeaViedo>
+        <h1>🍃Explore world of tea🍃</h1>
+
+        <NavLink to={"/teas"}>
+          <Button>Check 'em out</Button>
+        </NavLink>
+      </HomeWrapper>
+    </ContentWrapper>
   );
 };
 
