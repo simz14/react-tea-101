@@ -9,7 +9,7 @@ const TeaDescStyled = styled.div`
   border-radius: 15px;
 `;
 
-const TeaPargraph = styled.p`
+const TeaParagraph = styled.p`
   margin: 0;
 `;
 
@@ -18,7 +18,7 @@ const TeaDesc = ({ currentTea }) => {
     <TeaDescStyled>
       {getTeas.map((tea) => {
         if (tea.id == currentTea) {
-          return <TeaPargraph key={tea.id}>{tea.description}</TeaPargraph>;
+          return <TeaParagraph key={tea.id}>{tea.description}</TeaParagraph>;
         }
       })}
     </TeaDescStyled>
