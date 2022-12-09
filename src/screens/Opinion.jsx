@@ -22,6 +22,7 @@ const WomenCollectingImage = styled.img`
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  left: 0;
 `;
 
 const Title = styled.h1`
@@ -31,6 +32,7 @@ const Title = styled.h1`
 
 const InputsWrapper = styled.div`
   display: grid;
+  margin-top: auto;
 `;
 
 const NameInputWrap = styled.div`
@@ -56,6 +58,7 @@ const PersonIcon = styled(BsFillPersonFill)`
 
 const NavButtonsWrap = styled.div`
   display: flex;
+  margin-top: auto;
 `;
 
 const ButtonToHome = styled.button`
@@ -97,11 +100,11 @@ const Opinion = () => {
             id="opinion"
             placeholder="Type here..."
           ></OpinionInput>
-        </InputsWrapper>
 
-        <button>
-          Submit <RiSendPlaneFill />
-        </button>
+          <button>
+            Submit <RiSendPlaneFill />
+          </button>
+        </InputsWrapper>
 
         <NavButtonsWrap>
           <NavLink to="/">

@@ -1,5 +1,4 @@
 :root {
-  display: flex;
   justify-content: center;
   font-family: system-ui;
   font-size: 16px;
@@ -42,7 +41,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  background-color: #a18a6e;
+  background-color: #88c740;
   transition: 0.3s ease;
 }
 
@@ -55,7 +54,7 @@ button:hover {
     color: #747bff;
   }
   button {
-    background-color: #dbd7b4;
+    background-color: #c7f88e;
     transition: 0.3s ease;
   }
 }
